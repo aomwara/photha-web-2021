@@ -17,18 +17,18 @@
         >
           <v-list-item-content>
             <v-list-item-title class="menu-list">
-              {{ $t('educationLanding.header_'+item) }}
+              {{item}}
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item
-          :href="link.education.contact"
+          href='/history'
           link
           :style="{ animationDuration: navMenu.length * 0.15 + 's' }"
         >
           <v-list-item-content>
             <v-list-item-title class="menu-list">
-              {{ $t('educationLanding.header_contact') }}
+              ประวัติโรงเรียน
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
