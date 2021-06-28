@@ -18,9 +18,9 @@
         <div id="about">
           <about />
         </div> -->
-        <section id="testimonials" class="space-top">
+        <!-- <section id="testimonials" class="space-top">
           <testimonials />
-        </section>
+        </section> -->
         <!-- <section id="blog" class="space-top-short">
           <blog />
         </section>
