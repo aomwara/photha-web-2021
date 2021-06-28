@@ -1,0 +1,81 @@
+@mixin align {
+  &.align-left {
+    @include text-align(left);
+    h4 {
+      &:before {
+        @include left(-4px)
+      }
+    }
+  }
+
+  &.align-right {
+    @include text-align(right);
+    h4 {
+      &:before {
+        @include right(-4px)
+      }
+    }
+  }
+
+  &.align-center {
+    text-align: center;
+    h4 {
+      &:before {
+        width: 80%;
+        @include left(10%);
+      }
+    }
+  }
+}
+
+.title-main {
+  font-family: 'IBM Plex Thai', sans-serif;
+  @include align;
+  margin-bottom: $spacing3;
+  h4 {
+    font-family: 'IBM Plex Thai', sans-serif;
+    text-transform: capitalize;
+    @include palette-text-primary;
+    margin-bottom: $spacing1;
+    position: relative;
+    display: inline-block;
+    span {
+      position: relative;
+    }
+    &.primary-color {
+      &:before {
+        @include use-theme(background-color, $palette-primary-light, $palette-primary-dark);
+      }
+    }
+    &.secondary-color {
+      &:before {
+        @include use-theme(background-color, $palette-secondary-light, $palette-secondary-dark);
+      }
+    }
+    &:before {
+      content: '';
+      height: 15px;
+      width: 90%;
+      position: absolute;
+      bottom: 10px;
+      @include left(0);
+      z-index: 0;
+      @include breakpoints-down(xs) {
+        height: 8px;
+      }
+    }
+  }
+  &.dark {
+    h4 {
+      font-family: 'IBM Plex Thai', sans-serif;
+      color: $palette-common-white;
+      &:before {
+        background-color: rgba(255, 255, 255, 0.5) !important
+      }
+    }
+    .desc {
+      position: relative;
+      color: $palette-common-white
+    }
+  }
+}
