@@ -218,9 +218,6 @@ module.exports = {
   server: {
     port: 8011, // default: 3000
   },
-  router: {
-   base: '/pnweb/',  
-  },
   generate: {
     dir: 'public',
   },
