@@ -293,7 +293,6 @@ module.exports = {
     {
       path: '/api',
       handler: '~/api/index.js'
-    },
-    process.env.NODE_ENV === 'production' ? [] : ['~/api/index.js']
+    }
   ]
 }
