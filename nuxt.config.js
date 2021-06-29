@@ -217,9 +217,15 @@ module.exports = {
   ** Application Port
   */
   server: {
-    port: 8011, // default: 3000
+    port: 8011 // default: 3000
   },
   generate: {
-    dir: 'public',
+    dir: 'public'
   },
+  serverMiddleware: [
+    {
+      path: '/api',
+      handler: '~/api/index.js'
+    }
+  ]
 }

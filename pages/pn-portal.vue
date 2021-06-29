@@ -6,22 +6,17 @@
       <div class="container-wrap">
         <section class="space-top">
           <div class="box">
-            <h1 class="header">เข้าสู่ระบบ PN Portal</h1>
+            <h1 class="header">เข้าสู่ระบบ PN Portal {{this.name}}</h1>
             <hr />
           <v-container>
             <v-row>
               <v-col cols="5">
             <form>
               <v-text-field
-                v-model="name"
-                :error-messages="nameErrors"
-                :counter="10"
                 label="Name"
                 required
               ></v-text-field>
               <v-text-field
-                v-model="email"
-                :error-messages="emailErrors"
                 label="E-mail"
                 required
               ></v-text-field>
@@ -120,16 +115,27 @@ main-wrap {
 import Header from '~/components/Header'
 import Footer from '~/components/Footer'
 import brand from '~/static/text/brand'
+import axios from 'axios'
 
 export default {
   components: {
     'main-header': Header,
-    'main-footer': Footer,
+    'main-footer': Footer
   },
   head() {
     return {
       title: brand.education.name + ' - ประวัติโรงเรียน',
     }
   },
+  data() {
+    return {
+      name: ''
+    }
+  },
+  mounted() {
+    axios.get('/api/settings').then(res => {
+      this.name = res.data.scname
+    })
+  }
 }
 </script>
