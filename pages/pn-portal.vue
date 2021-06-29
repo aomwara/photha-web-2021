@@ -6,7 +6,7 @@
       <div class="container-wrap">
         <section class="space-top">
           <div class="box">
-            <h1 class="header">เข้าสู่ระบบ PN Portal {{this.name}}</h1>
+            <h1 class="header">{{this.api.app_name}} <small>v{{this.api.app_version}}</small></h1>
             <hr />
           <v-container>
             <v-row>
@@ -124,17 +124,18 @@ export default {
   },
   head() {
     return {
-      title: brand.education.name + ' - ประวัติโรงเรียน',
+      title: brand.education.name + ' - ประวัติโรงเรียน'
     }
   },
   data() {
     return {
-      name: ''
+      api: ''
     }
   },
   mounted() {
     axios.get('/api/settings').then(res => {
-      this.name = res.data.scname
+      console.log(`:: APIs Connected => `, res.status)
+      this.api = res.data
     })
   }
 }
