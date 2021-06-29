@@ -105,11 +105,11 @@
                 </li>
                 <li>
                   <v-btn
-                    :href="link.education.contact"
+                    href='/departments'
                     text
                   >
                     <span class="text">
-                      บุคคลากร
+                      บุคลากร
                     </span>
                   </v-btn>
                 </li>

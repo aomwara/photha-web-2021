@@ -145,7 +145,7 @@ export default {
   },
   head() {
     return {
-      title: brand.education.name + ' - ประวัติโรงเรียน'
+      title: brand.education.name + ' - Blank Page'
     }
   }
 }

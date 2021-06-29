@@ -1,40 +1,40 @@
 <template>
   <div>
     <div class="main-wrap">
-      <header-main />
+      <header-main invert/>
       <div class="container-wrap">
-        <section id="home">
+        <!-- <section id="home">
           <banner />
-        </section>
-        <!-- <section id="feature" class="space-top">
-          <feature />
         </section> -->
-        <section id="feature" class="space-top-short">
+        <section id="feature" class="space-top">
+          <feature />
+        </section>
+        <!-- <section id="feature" class="space-top-short">
           <popular-course />
         </section>
-        <!-- <section id="explore">
+        <section id="explore">
           <explore />
-        </section> -->
-        <!-- <div id="about">
+        </section> 
+        <div id="about">
           <about />
-        </div>  -->
+        </div> 
         <section id="testimonials" class="space-top">
           <testimonials />
         </section>
-        <!-- <section id="blog" class="space-top-short">
+        <section id="blog" class="space-top-short">
           <blog />
-        </section> -->
-        <!-- <section id="subscribe" class="space-top-short">
+        </section> 
+        <section id="subscribe" class="space-top-short">
           <subscribe-form />
-        </section> -->
+        </section>  -->
         <footer-main />
       </div>
       <hidden point="mdDown">
         <page-nav />
       </hidden>
-      <hidden point="mdDown">
+      <!-- <hidden point="mdDown">
         <notification />
-      </hidden>
+      </hidden> -->
     </div>
   </div>
 </template>

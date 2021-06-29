@@ -2,88 +2,156 @@
   <div class="root">
     <v-container class="max-md">
       <title-main
-        :head="$t('educationLanding.feature_title')"
-        :desc="$t('educationLanding.feature_desc')"
+        head='บุคลากร'
+        desc='บุคลากรภายในโรงเรียน'
         align="center"
         color="primary"
       />
+      <v-container fill-height>
+      <v-row class="spacing8 grid" justify="center" align="center">
+        <v-col sm="12">
+          <div class="counter-item">
+            <figure>
+              <img src="/images/education/presenter.svg" alt="manager" />
+            </figure>
+            <div class="text" v-if="loaded">
+              <h1 class="dept-head">
+                ผู้บริหาร
+              </h1>
+              <v-btn color="primary" small>ดูข้อมูล</v-btn>
+            </div>
+          </div>
+        </v-col>
+      </v-row>
+      </v-container>
       <v-row class="spacing8 grid">
         <v-col sm="6" class="px-8">
           <div class="counter-item">
             <figure>
-              <img src="/images/education/hd-video.svg" alt="hd-video" />
+              <img src="/images/education/presenter.svg" alt="manager" />
             </figure>
             <div class="text" v-if="loaded">
-              <h4 class="use-text-title">
-                +<span
-                  v-countUp:onWindowScroll.once="{
-                    watchedElId: 'watched_counter',
-                    startValue: 0,
-                    endValue: 100,
-                    options: { duration: 1 }
-                  }"
-                />K
-              </h4>
-              <h6 class="use-text-subtitle2">
-                {{ $t('educationLanding.counter_videos') }}
-              </h6>
+              <h1 class="dept-head">
+                คณิตศาสตร์
+              </h1>
+              <v-btn color="primary" small>ดูข้อมูล</v-btn>
             </div>
           </div>
         </v-col>
         <v-col sm="6" class="px-8">
           <div class="counter-item">
             <figure>
-              <img src="/images/education/presenter.svg" alt="presenter" />
+              <img src="/images/education/presenter.svg" alt="manager" />
             </figure>
             <div class="text" v-if="loaded">
-              <h4 class="use-text-title">
-                +<span
-                  v-countUp:onWindowScroll.once="{
-                    watchedElId: 'watched_counter',
-                    startValue: 0,
-                    endValue: 200,
-                    options: { duration: 1 }
-                  }"
-                />
-              </h4>
-              <h6 class="use-text-subtitle2">
-                {{ $t('educationLanding.counter_mentors') }}
-              </h6>
+              <h1 class="dept-head">
+                วิทยาศาสตร์
+              </h1>
+              <v-btn color="primary" small>ดูข้อมูล</v-btn>
             </div>
           </div>
         </v-col>
         <v-col sm="6" class="px-8">
           <div class="counter-item">
             <figure>
-              <img src="/images/education/money.svg" alt="money" />
+              <img src="/images/education/presenter.svg" alt="manager" />
             </figure>
             <div class="text" v-if="loaded">
-              <h4 class="use-text-title">
-                $<span
-                  v-countUp:onWindowScroll.once="{
-                    watchedElId: 'watched_counter',
-                    startValue: 0,
-                    endValue: 500,
-                    options: { duration: 2 }
-                  }"
-                />
-              </h4>
-              <h6 class="use-text-subtitle2">
-                {{ $t('educationLanding.counter_save') }}
-              </h6>
+              <h1 class="dept-head">
+                ภาษาไทย
+              </h1>
+              <v-btn color="primary" small>ดูข้อมูล</v-btn>
             </div>
           </div>
         </v-col>
         <v-col sm="6" class="px-8">
           <div class="counter-item">
             <figure>
-              <img src="/images/education/unlimited.svg" alt="unlimited" />
+              <img src="/images/education/presenter.svg" alt="manager" />
             </figure>
             <div class="text" v-if="loaded">
-              <h4 class="use-text-title">Free</h4>
-              <h6 class="use-text-subtitle2">
-                {{ $t('educationLanding.counter_free') }}
-              </h6>
+              <h1 class="dept-head">
+                ภาษาต่างประเทศ
+              </h1>
+              <v-btn color="primary" small>ดูข้อมูล</v-btn>
+            </div>
+          </div>
+        </v-col>
+        <v-col sm="6" class="px-8">
+          <div class="counter-item">
+            <figure>
+              <img src="/images/education/presenter.svg" alt="manager" />
+            </figure>
+            <div class="text" v-if="loaded">
+              <h1 class="dept-head">
+                การงานอาชีพและเทคโนโลยี
+              </h1>
+              <v-btn color="primary" small>ดูข้อมูล</v-btn>
+            </div>
+          </div>
+        </v-col>
+        <v-col sm="6" class="px-8">
+          <div class="counter-item">
+            <figure>
+              <img src="/images/education/presenter.svg" alt="manager" />
+            </figure>
+            <div class="text" v-if="loaded">
+              <h1 class="dept-head">
+                สังคมศึกษาศาสนาและวัฒนธรรม
+              </h1>
+              <v-btn color="primary" small>ดูข้อมูล</v-btn>
+            </div>
+          </div>
+        </v-col>
+        <v-col sm="6" class="px-8">
+          <div class="counter-item">
+            <figure>
+              <img src="/images/education/presenter.svg" alt="manager" />
+            </figure>
+            <div class="text" v-if="loaded">
+              <h1 class="dept-head">
+                ศิลปะ
+              </h1>
+              <v-btn color="primary" small>ดูข้อมูล</v-btn>
+            </div>
+          </div>
+        </v-col>
+        <v-col sm="6" class="px-8">
+          <div class="counter-item">
+            <figure>
+              <img src="/images/education/presenter.svg" alt="manager" />
+            </figure>
+            <div class="text" v-if="loaded">
+              <h1 class="dept-head">
+                พลศึกษา/สุขศึกษา
+              </h1>
+              <v-btn color="primary" small>ดูข้อมูล</v-btn>
+            </div>
+          </div>
+        </v-col>
+        <v-col sm="6" class="px-8">
+          <div class="counter-item">
+            <figure>
+              <img src="/images/education/presenter.svg" alt="manager" />
+            </figure>
+            <div class="text" v-if="loaded">
+              <h1 class="dept-head">
+               คอมพิวเตอร์
+              </h1>
+              <v-btn color="primary" small>ดูข้อมูล</v-btn>
+            </div>
+          </div>
+        </v-col>
+        <v-col sm="6" class="px-8">
+          <div class="counter-item">
+            <figure>
+              <img src="/images/education/presenter.svg" alt="manager" />
+            </figure>
+            <div class="text" v-if="loaded">
+              <h1 class="dept-head">
+                งานแนะแนว
+              </h1>
+              <v-btn color="primary" small>ดูข้อมูล</v-btn>
             </div>
           </div>
         </v-col>
@@ -94,6 +162,9 @@
 
 <style lang="scss" scoped>
 @import 'feature-style.scss';
+.dept-head {
+  padding-bottom: 10px;
+}
 </style>
 
 <script>
