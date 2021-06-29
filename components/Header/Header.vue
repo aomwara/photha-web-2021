@@ -129,8 +129,8 @@
           <nav class="nav-menu nav-auth">
             <hidden point="xsDown">
               <div class="deco" />
-              <v-btn href="mailto:info@photha.ac.th" class="text-btn" text>
-                <!-- ติดต่อเรา -->
+              <v-btn href="/pn-portal" class="text-btn" text>
+                My โพธา ฯ
               </v-btn>
               <v-btn :href="link.education.register" class="button white">
                 สมัครเรียน

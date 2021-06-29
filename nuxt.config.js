@@ -99,6 +99,7 @@ module.exports = {
   */
   buildModules: [
     '@nuxtjs/vuetify',
+    '@nuxtjs/axios'
   ],
   /*
   ** Nuxt.js modules
