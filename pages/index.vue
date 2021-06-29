@@ -8,23 +8,23 @@
         </section>
         <!-- <section id="feature" class="space-top">
           <feature />
-        </section>
-        <section id="popular" class="space-top-short">
+        </section> -->
+        <section id="feature" class="space-top-short">
           <popular-course />
         </section>
         <section id="explore">
           <explore />
         </section>
-        <div id="about">
+        <!-- <div id="about">
           <about />
-        </div> -->
-        <!-- <section id="testimonials" class="space-top">
+        </div>  -->
+        <section id="testimonials" class="space-top">
           <testimonials />
-        </section> -->
+        </section>
         <!-- <section id="blog" class="space-top-short">
           <blog />
-        </section>
-        <section id="subscribe" class="space-top-short">
+        </section> -->
+        <!-- <section id="subscribe" class="space-top-short">
           <subscribe-form />
         </section> -->
         <footer-main />

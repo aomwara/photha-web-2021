@@ -32,6 +32,9 @@
   font-family: 'IBM Plex Thai', sans-serif;
   @include align;
   margin-bottom: $spacing3;
+  h6{
+    font-family: 'IBM Plex Thai', sans-serif;
+  }
   h4 {
     font-family: 'IBM Plex Thai', sans-serif;
     text-transform: capitalize;
@@ -40,6 +43,7 @@
     position: relative;
     display: inline-block;
     span {
+      font-family: 'IBM Plex Thai', sans-serif;
       position: relative;
     }
     &.primary-color {

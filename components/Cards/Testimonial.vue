@@ -3,15 +3,19 @@
     <div class="icon">
       <v-icon>mdi-format-quote-close</v-icon>
     </div>
+    <p class="caption-title">
+      {{ title }} <small>{{ date }}</small>
+    </p>
     <p class="text">
       {{ text }}
     </p>
-    <h6 class="title">
-      {{ name }}
-    </h6>
-    <p class="caption-title">
-      {{ title }}
-    </p>
+    <v-btn :href="title" class="button" outlined color="primary">
+        อ่านต่อ
+    </v-btn>
+    <v-btn :href="title" class="button" outlined color="primary">
+        แชร์
+    </v-btn>
+    
   </div>
 </template>
 
@@ -22,15 +26,15 @@
 <script>
 export default {
   props: {
-    name: {
-      type: String,
-      required: true
-    },
     title: {
       type: String,
       required: true
     },
     text: {
+      type: String,
+      required: true
+    },
+    date: {
       type: String,
       required: true
     }

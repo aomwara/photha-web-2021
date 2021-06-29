@@ -1,7 +1,11 @@
 .v-application {
+  font-family: 'IBM Plex Thai', sans-serif;
   overflow: hidden;
   &--is-rtl {
     text-align: right
+  }
+  .title{
+    font-family: 'IBM Plex Thai', sans-serif;
   }
   .v-main {
     padding: 0 !important
@@ -81,11 +85,13 @@
 
 .v-application.theme--dark {
   .v-sheet.v-card:not(.v-sheet--outlined) {
+    font-family: 'IBM Plex Thai', sans-serif;
     box-shadow: 0px 1px 3px 0px rgba(64, 64, 64, 1), 0px 1px 1px 0px rgba(42, 42, 42, 1), 0px 2px 1px -1px rgba(20, 20, 20, 1)
   }
 }
 
 .v-application.theme--light {
+  font-family: 'IBM Plex Thai', sans-serif;
   .v-sheet.v-card:not(.v-sheet--outlined) {
     box-shadow: 0 1.5px 12px 2px rgba(0, 0, 0, 0.06);
   }

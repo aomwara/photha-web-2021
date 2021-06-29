@@ -6,8 +6,8 @@
     <v-container :class="{ 'fixed-width': isDesktop }">
       <div class="px-6">
         <title-main
-          :head="$t('educationLanding.explore_title')"
-          :desc="$t('educationLanding.explore_desc')"
+          head='ประมวลภาพกิจกรรม'
+          desc='ภาพกิจกรรมภายในโรงเรียนโพธาวัฒนาเสนี'
           :align="isMobile ? 'center' : 'left'"
           color="primary"
         />

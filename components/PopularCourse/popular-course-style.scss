@@ -47,6 +47,7 @@
 }
 
 .floating-title {
+  font-family: 'IBM Plex Thai', sans-serif;
   @include text-align(left);
   @include breakpoints-up(sm) {
     padding: spacing(0, 2);

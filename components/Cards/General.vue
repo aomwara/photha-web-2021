@@ -9,7 +9,7 @@
         {{ desc }}
       </p>
       <div class="property">
-        <div class="rating">
+        <!-- <div class="rating">
           <v-icon
             v-for="index in rating"
             :key="index"
@@ -17,11 +17,10 @@
           >
             mdi-star
           </v-icon>  
-        </div>
-        <strong>${{ price }}</strong>
+        </div> -->
       </div>
-      <v-btn href="#" block class="button" outlined color="primary">
-        Explore
+      <v-btn :href="link" block class="button" outlined color="primary">
+        อ่านต่อ
       </v-btn>
     </div>
   </v-card>
@@ -46,12 +45,8 @@ export default {
       type: String,
       required: true
     },
-    rating: {
-      type: Number,
-      default: 0,
-    },
-    price: {
-      type: Number,
+    link: {
+      type: String,
       required: true
     }
   }

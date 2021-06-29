@@ -2,27 +2,27 @@
   <div class="error-wrap">
     <v-container class="max-md">
       <v-row>
-        <v-col cols="12" md="5">
+        <!-- <v-col cols="12" md="5">
           <div class="flex">
             <div class="deco">
               <h3 class="display-4">
-                {{ errCode }}
+                403
               </h3>
             </div>
           </div>
-        </v-col>
+        </v-col> -->
         <v-col cols="12" md="7">
           <div class="text">
-            <h4 class="display-1">{{ text }}</h4>
+            <h4 class="display-1">404 Not Found</h4>
             <p>
-              {{ $t('common.404_subtitle') }}
+             ไม่พบหน้าที่ต้องการเข้าถึง
             </p>
             <v-btn
               href="/"
               color="primary"
               class="button"
             >
-              {{ $t('common.back') }}
+              กลับหน้าแรก
             </v-btn>
           </div>
         </v-col>

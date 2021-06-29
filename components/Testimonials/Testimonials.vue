@@ -1,8 +1,8 @@
 <template>
   <div class="root">
     <title-main
-      :head="$t('educationLanding.testimonials_title')"
-      :desc="$t('educationLanding.testimonials_desc')"
+      head='ประกาศจากโรงเรียน'
+      desc='ประกาศข่าวสารต่าง ๆ และประชาสัมพันธ์'
       align="center"
       color="primary"
     />
@@ -19,8 +19,8 @@
           >
             <testi-card
               :text="item.text"
-              :name="item.name"
               :title="item.title"
+              :date="item.date"
             />
           </div>
         </slick>
@@ -56,39 +56,46 @@ import TestiCard from '../Cards/Testimonial'
 const testiData = [
   {
     text:
-      'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.',
-    name: 'John Doe',
-    title: 'Chief Digital Officer'
+      'โรงเรียนโพธาวัฒนาเสนี เปิดให้นักเรียนมาเรียนแบบ Onsite (มาเรียนที่โรงเรียน) ในวันจันทร์ ที่ 28 มิถุนายน 2564 โดยจะมีการจัดการเรียนการสอนแบบสลับกันมาเรียน ในส่วนของรายละเอียดเพิ่มเติมอื่นๆ โรงเรียนจะแจ้งให้ทราบในลำดับถัดไปค่ะ สำหรับ วันที่ 21 - 25 มิถุนายน ยังคงจัดการเรียนการสอนในรูปแบบออนไลน์ค่ะ',
+    title: 'แจ้งการมาเรียน',
+    date: '27 มิถุนายน 2564'
   },
   {
     text:
-      'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
-    name: 'Jean Doe',
-    title: 'Chief Digital Officer'
+      'โรงเรียนโพธาวัฒนาเสนี เปิดให้นักเรียนมาเรียนแบบ Onsite (มาเรียนที่โรงเรียน) ในวันจันทร์ ที่ 28 มิถุนายน 2564 โดยจะมีการจัดการเรียนการสอนแบบสลับกันมาเรียน ในส่วนของรายละเอียดเพิ่มเติมอื่นๆ โรงเรียนจะแจ้งให้ทราบในลำดับถัดไปค่ะ สำหรับ วันที่ 21 - 25 มิถุนายน ยังคงจัดการเรียนการสอนในรูปแบบออนไลน์ค่ะ',
+    title: 'แจ้งการมาเรียน',
+    date: '27 มิถุนายน 2564'
   },
   {
     text:
-      'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    name: 'Jena Doe',
-    title: 'Graphic Designer'
-  },
-  {
-    text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-    name: 'Jovelin Doe',
-    title: 'Senior Graphic Designer'
+      'โรงเรียนโพธาวัฒนาเสนี เปิดให้นักเรียนมาเรียนแบบ Onsite (มาเรียนที่โรงเรียน) ในวันจันทร์ ที่ 28 มิถุนายน 2564 โดยจะมีการจัดการเรียนการสอนแบบสลับกันมาเรียน ในส่วนของรายละเอียดเพิ่มเติมอื่นๆ โรงเรียนจะแจ้งให้ทราบในลำดับถัดไปค่ะ สำหรับ วันที่ 21 - 25 มิถุนายน ยังคงจัดการเรียนการสอนในรูปแบบออนไลน์ค่ะ',
+    title: 'แจ้งการมาเรียน',
+    date: '27 มิถุนายน 2564'
   },
   {
     text:
-      'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    name: 'Jihan Doe',
-    title: 'CEO Software House'
+      'โรงเรียนโพธาวัฒนาเสนี เปิดให้นักเรียนมาเรียนแบบ Onsite (มาเรียนที่โรงเรียน) ในวันจันทร์ ที่ 28 มิถุนายน 2564 โดยจะมีการจัดการเรียนการสอนแบบสลับกันมาเรียน ในส่วนของรายละเอียดเพิ่มเติมอื่นๆ โรงเรียนจะแจ้งให้ทราบในลำดับถัดไปค่ะ สำหรับ วันที่ 21 - 25 มิถุนายน ยังคงจัดการเรียนการสอนในรูปแบบออนไลน์ค่ะ',
+    title: 'แจ้งการมาเรียน',
+    date: '27 มิถุนายน 2564'
   },
   {
     text:
-      'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
-    name: 'Jovelin Doe',
-    title: 'Senior Graphic Designer'
-  }
+      'โรงเรียนโพธาวัฒนาเสนี เปิดให้นักเรียนมาเรียนแบบ Onsite (มาเรียนที่โรงเรียน) ในวันจันทร์ ที่ 28 มิถุนายน 2564 โดยจะมีการจัดการเรียนการสอนแบบสลับกันมาเรียน ในส่วนของรายละเอียดเพิ่มเติมอื่นๆ โรงเรียนจะแจ้งให้ทราบในลำดับถัดไปค่ะ สำหรับ วันที่ 21 - 25 มิถุนายน ยังคงจัดการเรียนการสอนในรูปแบบออนไลน์ค่ะ',
+    title: 'แจ้งการมาเรียน',
+    date: '27 มิถุนายน 2564'
+  },
+  {
+    text:
+      'โรงเรียนโพธาวัฒนาเสนี เปิดให้นักเรียนมาเรียนแบบ Onsite (มาเรียนที่โรงเรียน) ในวันจันทร์ ที่ 28 มิถุนายน 2564 โดยจะมีการจัดการเรียนการสอนแบบสลับกันมาเรียน ในส่วนของรายละเอียดเพิ่มเติมอื่นๆ โรงเรียนจะแจ้งให้ทราบในลำดับถัดไปค่ะ สำหรับ วันที่ 21 - 25 มิถุนายน ยังคงจัดการเรียนการสอนในรูปแบบออนไลน์ค่ะ',
+    title: 'แจ้งการมาเรียน',
+    date: '27 มิถุนายน 2564'
+  },
+  {
+    text:
+      'โรงเรียนโพธาวัฒนาเสนี เปิดให้นักเรียนมาเรียนแบบ Onsite (มาเรียนที่โรงเรียน) ในวันจันทร์ ที่ 28 มิถุนายน 2564 โดยจะมีการจัดการเรียนการสอนแบบสลับกันมาเรียน ในส่วนของรายละเอียดเพิ่มเติมอื่นๆ โรงเรียนจะแจ้งให้ทราบในลำดับถัดไปค่ะ สำหรับ วันที่ 21 - 25 มิถุนายน ยังคงจัดการเรียนการสอนในรูปแบบออนไลน์ค่ะ',
+    title: 'แจ้งการมาเรียน',
+    date: '27 มิถุนายน 2564'
+  },
 ]
 
 export default {

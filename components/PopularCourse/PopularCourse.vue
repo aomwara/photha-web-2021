@@ -6,8 +6,8 @@
     <v-container>
       <div class="floating-title">
         <title-main
-          :head="$t('educationLanding.popular_title')"
-          :desc="$t('educationLanding.popular_desc')"
+          head='ข่าวสาร'
+          desc='จดหมายข่าวประชาสัมพันธ์ '
           :align="isMobile ? 'center' : 'left'"
           dark
           color="primary"
@@ -29,8 +29,7 @@
               :img="item.img"
               :title="item.title"
               :desc="item.desc"
-              :rating="item.rating"
-              :price="item.price"
+              :link="item.link"
             />
           </div>
           <div class="props item-props-last">
@@ -70,52 +69,42 @@ import DotParallax from '../Parallax/Dot'
 
 const courseData = [
   {
-    img: imgAPI.education[9],
-    title: 'Vivamus sit amet',
-    rating: 5,
-    price: 50,
-    desc:
-      'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    img: 'https://web.sesao8.go.th/news/uploads/22062021-213832_64.jpg',
+    link: 'https://web.sesao8.go.th/news/story.php?id=8597',
+    title: 'การเตรียมความพร้อม',
+    desc: ' การเตรียมความพร้อมการเปิดเรียน และการจัดการเรียนการสอน'
   },
   {
-    img: imgAPI.education[5],
-    title: 'Vivamus sit amet',
-    rating: 4,
-    price: 10,
+    img: 'https://web.sesao8.go.th/news/uploads/31052021-170354_64.jpg',
+    link: 'https://web.sesao8.go.th/news/story.php?id=8550',
+    title: 'จัดชุดหนังสือเรียน',
     desc:
-      'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+      'จัดชุดหนังสือเรียนทุกระดับชั้น (ม.1-ม.6) ปีการศึกษา 2564 เพื่อแจกให้กับนักเรียนทุกคน'
   },
   {
-    img: imgAPI.education[3],
-    title: 'Vivamus sit amet',
-    rating: 5,
-    price: 50,
-    desc:
-      'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    img: 'https://web.sesao8.go.th/news/uploads/30052021-214759_64.jpg',
+    link: 'https://web.sesao8.go.th/news/story.php?id=8546',
+    title: 'รับรายงานตัว/มอบตัว',
+    desc: ' ชั้นมัธยมศึกษาปีที่ 1 และระดับชั้นมัธยมศึกษาปีที่ 4'
   },
   {
-    img: imgAPI.education[4],
-    title: 'Vivamus sit amet',
-    rating: 3,
-    price: 25,
-    desc:
-      'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    img: 'https://web.sesao8.go.th/news/uploads/22062021-213832_64.jpg',
+    link: 'https://web.sesao8.go.th/news/story.php?id=8597',
+    title: 'การเตรียมความพร้อม',
+    desc: ' การเตรียมความพร้อมการเปิดเรียน และการจัดการเรียนการสอน'
   },
   {
-    img: imgAPI.education[8],
-    title: 'Vivamus sit amet',
-    rating: 5,
-    price: 50,
+    img: 'https://web.sesao8.go.th/news/uploads/31052021-170354_64.jpg',
+    link: 'https://web.sesao8.go.th/news/story.php?id=8550',
+    title: 'จัดชุดหนังสือเรียน',
     desc:
-      'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+      'จัดชุดหนังสือเรียนทุกระดับชั้น (ม.1-ม.6) ปีการศึกษา 2564 เพื่อแจกให้กับนักเรียนทุกคน'
   },
   {
-    img: imgAPI.education[7],
-    title: 'Vivamus sit amet',
-    rating: 5,
-    price: 40,
-    desc:
-      'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    img: 'https://web.sesao8.go.th/news/uploads/30052021-214759_64.jpg',
+    link: 'https://web.sesao8.go.th/news/story.php?id=8546',
+    title: 'รับรายงานตัว/มอบตัว',
+    desc: ' ชั้นมัธยมศึกษาปีที่ 1 และระดับชั้นมัธยมศึกษาปีที่ 4'
   }
 ]
 
