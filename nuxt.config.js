@@ -1,5 +1,5 @@
 import FilterWarningsPlugin from 'webpack-filter-warnings-plugin'
-import nodeExternals from 'webpack-node-externals'
+//import nodeExternals from 'webpack-node-externals'
 import { theme } from './config/vuetify.options'
 import languages from './static/lang/languages'
 import brand from './static/text/brand'
@@ -19,9 +19,12 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'description', content: brand.education.desc },
       { name: 'msapplication-TileColor', content: '#FFFFFF' },
-      { name: 'msapplication-TileImage', content: '/favicons/ms-icon-144x144.png' },
+      {
+        name: 'msapplication-TileImage',
+        content: '/favicons/ms-icon-144x144.png'
+      },
       // PWA primary color
-      { name: 'theme-color', content: theme.primary},
+      { name: 'theme-color', content: theme.primary },
       // Facebook
       { property: 'author', content: 'luxi' },
       { property: 'og:site_name', content: 'luxi.ux-maestro.com' },
@@ -46,24 +49,91 @@ module.exports = {
     link: [
       // Favicon
       { rel: 'shortcut icon', href: '/favicons/favicon.ico' },
-      { rel: 'apple-touch-icon', sizes: '57x57', href: '/favicons/apple-icon-57x57.png' },
-      { rel: 'apple-touch-icon', sizes: '60x60', href: '/favicons/apple-icon-60x60.png' },
-      { rel: 'apple-touch-icon', sizes: '72x72', href: '/favicons/apple-icon-72x72.png' },
-      { rel: 'apple-touch-icon', sizes: '76x76', href: '/favicons/apple-icon-76x76.png' },
-      { rel: 'apple-touch-icon', sizes: '114x114', href: '/favicons/apple-icon-114x114.png' },
-      { rel: 'apple-touch-icon', sizes: '120x120', href: '/favicons/apple-icon-120x120.png' },
-      { rel: 'apple-touch-icon', sizes: '144x144', href: '/favicons/apple-icon-144x144.png' },
-      { rel: 'apple-touch-icon', sizes: '152x152', href: '/favicons/apple-icon-152x152.png' },
-      { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicons/apple-icon-180x180.png' },
-      { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/favicons/android-icon-192x192.png' },
-      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicons/favicon-32x32.png' },
-      { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicons/favicon-96x96.png' },
-      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicons/favicon-16x16.png' },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '57x57',
+        href: '/favicons/apple-icon-57x57.png'
+      },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '60x60',
+        href: '/favicons/apple-icon-60x60.png'
+      },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '72x72',
+        href: '/favicons/apple-icon-72x72.png'
+      },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '76x76',
+        href: '/favicons/apple-icon-76x76.png'
+      },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '114x114',
+        href: '/favicons/apple-icon-114x114.png'
+      },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '120x120',
+        href: '/favicons/apple-icon-120x120.png'
+      },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '144x144',
+        href: '/favicons/apple-icon-144x144.png'
+      },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '152x152',
+        href: '/favicons/apple-icon-152x152.png'
+      },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/favicons/apple-icon-180x180.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '192x192',
+        href: '/favicons/android-icon-192x192.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favicons/favicon-32x32.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '96x96',
+        href: '/favicons/favicon-96x96.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/favicons/favicon-16x16.png'
+      },
       { rel: 'manifest', href: '/favicons/manifest.json' },
       // Fonts and Icons
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
-      { rel: 'stylesheet', href: 'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' }
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'
+      }
     ]
   },
   /*
@@ -97,10 +167,7 @@ module.exports = {
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [
-    '@nuxtjs/vuetify',
-    '@nuxtjs/axios'
-  ],
+  buildModules: ['@nuxtjs/vuetify', '@nuxtjs/axios'],
   /*
   ** Nuxt.js modules
   */
@@ -136,7 +203,7 @@ module.exports = {
         locales: languages,
         defaultLocale: 'en',
         vueI18n: {
-          fallbackLocale: 'en',
+          fallbackLocale: 'en'
         },
         detectBrowserLanguage: {
           useCookie: true,
@@ -164,8 +231,8 @@ module.exports = {
         shouldPreload: (file, type) => {
           return ['script', 'style', 'font'].includes(type)
         },
-        scroll: function (el, binding) {
-          let f = function (evt) {
+        scroll: function(el, binding) {
+          let f = function(evt) {
             if (binding.value(evt, el)) {
               window.removeEventListener('scroll', f)
             }
@@ -187,22 +254,22 @@ module.exports = {
       vus: { cacheBusting: true },
       scss: { sourceMap: false }
     },
-    extend (config, ctx) {
+    extend(config, ctx) {
       config.plugins.push(
         new FilterWarningsPlugin({
           exclude: /Critical dependency: the request of a dependency is an expression/
         })
-      );
+      )
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
-          enforce: "pre",
+          enforce: 'pre',
           test: /\.(js|vue)$/,
-          loader: "eslint-webpack-plugin",
+          loader: 'eslint-webpack-plugin',
           exclude: /([node_modules, static])/,
           options: {
             fix: false
           }
-        });
+        })
       }
     }
   },
