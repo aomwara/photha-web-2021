@@ -6,8 +6,8 @@
     <v-container>
       <div class="floating-title">
         <title-main
-          head='ข่าวสาร'
-          desc='จดหมายข่าวประชาสัมพันธ์ '
+          head="ข่าวสาร"
+          desc="จดหมายข่าวประชาสัมพันธ์ "
           :align="isMobile ? 'center' : 'left'"
           dark
           color="primary"
@@ -20,11 +20,7 @@
           <div class="props item-props-first">
             <div />
           </div>
-          <div
-            v-for="(item, index) in courseData"
-            :key="index"
-            class="item"
-          >
+          <div v-for="(item, index) in courseData" :key="index" class="item">
             <general-card
               :img="item.img"
               :title="item.title"
@@ -37,20 +33,10 @@
           </div>
         </slick>
       </div>
-      <v-btn
-        icon
-        fab
-        class="nav prev"
-        @click="prev()"
-      >
+      <v-btn icon fab class="nav prev" @click="prev()">
         <i class="ion-ios-arrow-left" />
       </v-btn>
-      <v-btn
-        icon
-        fab
-        class="nav next"
-        @click="next()"
-      >
+      <v-btn icon fab class="nav next" @click="next()">
         <i class="ion-ios-arrow-right" />
       </v-btn>
     </div>
@@ -159,7 +145,9 @@ export default {
     const props = window.innerWidth > 1400 ? 1 : 2 // div.carousel-props length for screen < 1400px and (-1) for screen > 1400px
     setTimeout(() => {
       if (this.$vuetify.rtl) {
-        const lastSlide = Math.floor(this.courseData.length + props - this.slickOptions.slidesToShow)
+        const lastSlide = Math.floor(
+          this.courseData.length + props - this.slickOptions.slidesToShow
+        )
         this.$refs.slick.goTo(lastSlide)
       }
     }, 200)

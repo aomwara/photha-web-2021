@@ -69,14 +69,13 @@
 
 <style lang="scss" scoped>
 @import './banner-style.scss';
-.btn-white{
-  color:white;
+.btn-white {
+  color: white;
 }
 </style>
 
 <script>
 import { KinesisContainer, KinesisElement } from 'vue-kinesis'
-import imgAPI from '~/static/images/imgAPI'
 import Hidden from '../Hidden'
 
 export default {
