@@ -35,8 +35,28 @@
           <div class="deco-banner">
             <div class="artwork-bg">
               <div class="oval"></div>
-              
-              <img src="/images/education/banner-artwork.png" alt="artwork" />
+              <div class="parallax-scene back" v-if="loaded">
+                <kinesis-container
+                   :duration="1500"
+                   easing="cubic-bezier(0.23, 1, 0.32, 1)"
+                >
+                  <kinesis-element
+                    :strength="30"
+                    type="translate"
+                    tag="div"
+                  >
+                    <span class="icon-three" />
+                  </kinesis-element>
+                  <kinesis-element
+                    :strength="20"
+                    type="translate"
+                    tag="div"
+                  >
+                    <span class="icon-four" />
+                  </kinesis-element>
+                </kinesis-container>
+              </div>
+              <img src="/images/education/photha-banner.png" alt="artwork" />
               <div class="parallax-scene front" v-if="loaded">
                 <kinesis-container
                    :duration="1500"
