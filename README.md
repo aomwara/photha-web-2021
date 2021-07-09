@@ -1,5 +1,4 @@
-# `education-theme`
-
+# Photha website 2021
 > TODO: description
 
 ## Installation
